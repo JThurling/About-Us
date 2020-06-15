@@ -1,0 +1,64 @@
+<div class="bg-light">
+  <div class="container py-5">
+    <div class="row h-100 align-items-center py-5">
+      <div class="col-lg-6">
+        <h1 class="display-4">Celebrating CAN Infinity's 17th Birthday</h1>
+        <p class="lead text-muted mb-0">We'll never stop helping you. Anytime. Anywhere</p>
+      </div>
+      <div class="col-lg-6 d-none d-lg-block">
+        <video class="img-fluid" src="./assets/video/fin3.mp4" controls></video></div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-white py-5">
+  <div class="container py-5">
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6 order-2 order-lg-1">
+        <h2 class="font-weight-light">Our Story</h2>
+        <br>
+        <p class="font-italic text-muted mb-4">Car Assistance Network (CAN) (Pty) Ltd was established in 2003 with the vision of helping people during roadside emergencies: providing assistance through traumatising situations in the most cost-efficient way, whilst upholding the highest level of quality service.
+          <br>
+          <br>
+          With over 15 years of experience in the emergency services industry, we have done business with corporate companies, brokers, insurance companies, underwriting managers and currently, work with over 2000 brokers nationwide.</p>
+
+        <br>
+        <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
+          <div class="blockquote-custom-icon bg-warning shadow-sm"><i class="fa fa-quote-left text-white"></i></div>
+          <p class="mb-0 mt-2 font-italic">“Together we CAN achieve new heights, together we CAN do it better.”</p>
+          <footer class="blockquote-footer pt-4 mt-4 border-top">CAN Infinity Team
+          </footer>
+        </blockquote>
+      </div>
+      <div class="col-lg-6 px-5 mx-auto order-1 order-lg-2">
+        <img src="./assets/images/work.png" alt="" class="img-fluid ml-lg-5 mb-4 mb-lg-0">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-light py-5">
+  <div class="container py-5">
+    <div class="row mb-4">
+      <div class="col-lg-5">
+        <h2 class="display-4 font-weight-light">Our team</h2>
+        <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div *ngFor="let user of users" class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{{user.pictureUrl}}" alt="" width="100"
+                                                               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">{{user.name}}</h5><span class="small text-uppercase text-muted">{{user.workTitle}}</span>
+          <br>
+          <strong class="small text-uppercase">{{user.description}}</strong>
+          <ul class="social mb-0 list-inline mt-3">
+              <li popover="{{user.workExtension}}" placement="bottom" class="list-inline-item"><a class="social-link"><i class="fa fa-phone"></i></a></li>
+              <li  popover="{{user.email}}" placement="bottom" class="list-inline-item"><a class="social-link"><i class="fa fa-envelope-o"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
